@@ -7,6 +7,9 @@
 # License: Open-source (keep credits, no resale)
 # ============================================================
 
+import asyncio
+asyncio.set_event_loop(asyncio.new_event_loop())
+
 from pyrogram import Client
 from config import API_ID, API_HASH, BOT_TOKEN
 import logging
